@@ -1,0 +1,17 @@
+Fluo-3
+
+To a first approximation, one can assume that the dye used in this experiment, fluo-3, only emits fluorescence when it is bound to Ca2+.
+Thus, where KD is the dissociation constant of the dye, and [Fluo3]TOTAL is the dye concentration, fluorescence is proportional to:
+
+
+F~{[Ca2+][Fluo3]TOTAL[Ca2+]+KD}
+
+If one makes a reasonable assumption for baseline [Ca2+] (e.g. 100 nm), the following equation can be used to convert from a ratio R 
+(units of F/F0) to [Ca2+] in units of concentration:
+
+[Ca2+]={RKDKD[Ca2+]baseline−R+1
+Implement this equation to convert flash and noflash from units of F/F0 to units of [Ca2+], in nM.
+
+
+You can assume [Ca2+]baseline= 100 nM, and KD= 700 nM. Keep in mind that your variables flash and noflash are not just scalars (numbers)
+but are defined at many time points.
